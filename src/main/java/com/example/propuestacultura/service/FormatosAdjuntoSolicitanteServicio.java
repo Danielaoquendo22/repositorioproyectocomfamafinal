@@ -19,8 +19,8 @@ public class FormatosAdjuntoSolicitanteServicio {
     }
 
     //BUSCAR TODOS LOS ESTADOS EN QUE HAY EN UNA BASE DE DATOS
-    public List<FormatoAdjuntoSolicitanteDTO> buscarTodosFormatosAdjuntos(){
-        return null;
+    //public List<FormatoAdjuntoSolicitanteDTO> buscarTodosFormatosAdjuntos(){
+    //    return null;
     }
 
    /* //BUSCAR UN ESTADO POR ID
