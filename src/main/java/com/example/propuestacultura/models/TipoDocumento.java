@@ -12,4 +12,27 @@ public class TipoDocumento {
     private Integer idTipoDocumento;
     private String tipoDocumento;
 
+    public TipoDocumento() {
+    }
+
+    public TipoDocumento(Integer idTipoDocumento, String tipoDocumento) {
+        this.idTipoDocumento = idTipoDocumento;
+        this.tipoDocumento = tipoDocumento;
+    }
+
+    public Integer getIdTipoDocumento() {
+        return idTipoDocumento;
+    }
+
+    public void setIdTipoDocumento(Integer idTipoDocumento) {
+        this.idTipoDocumento = idTipoDocumento;
+    }
+
+    public String getTipoDocumento() {
+        return tipoDocumento;
+    }
+
+    public void setTipoDocumento(String tipoDocumento) {
+        this.tipoDocumento = tipoDocumento;
+    }
 }
