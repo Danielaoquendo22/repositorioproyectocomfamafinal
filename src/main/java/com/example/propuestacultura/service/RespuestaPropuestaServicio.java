@@ -6,6 +6,8 @@ import com.example.propuestacultura.repositories.IRespuestaPropuestaRepositorio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class RespuestaPropuestaServicio {
     @Autowired
@@ -22,5 +24,27 @@ public class RespuestaPropuestaServicio {
         }catch (Exception error){
             throw new Exception(error.getMessage());
         }
+    }
+    public List<RespuestaPropuesta> buscarTodasRespuestas()throws Exception{
+        try{
+            return this.iRespuestaPropuestaRepositorio.findAll();
+
+        }catch (Exception error){
+            throw new Exception(error.getMessage());
+        }
+    }
+    public RespuestaPropuesta buscarRespuestaPorId(Integer id)throws Exception{
+
+        try{
+            if(this.iRespuestaPropuestaRepositorio.findById(id).isPresent()){
+                return  this.iRespuestaPropuestaRepositorio.findById(id).get();
+            }else{
+                throw new Exception("Estado no encontrado");
+            }
+
+        }catch (Exception error){
+            throw new Exception(error.getMessage());
+        }
+
     }
 }

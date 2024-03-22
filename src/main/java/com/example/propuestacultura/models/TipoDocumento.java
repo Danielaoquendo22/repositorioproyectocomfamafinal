@@ -20,6 +20,10 @@ public class TipoDocumento {
         this.tipoDocumento = tipoDocumento;
     }
 
+    public static TipoDocumento agregarTipoDocumento(TipoDocumento datosTipoDocumento) {
+        return null;
+    }
+
     public Integer getIdTipoDocumento() {
         return idTipoDocumento;
     }
